@@ -35,7 +35,7 @@ def date():
 
 def bot():
     global browser
-    browser = uc.Chrome(options=opts,driver_executable_path=f"{cwd}//chromedriver.exe")
+    browser = uc.Chrome(options=opts,executable_path=f"{cwd}//chromedriver.exe")
     #browser = webdriver.Chrome(,options=opts, desired_capabilities=dc)
     browser.get("https://www.tiktok.com/")
     with open(f"{cwd}//cookies.json", 'r') as cookiesfile:
